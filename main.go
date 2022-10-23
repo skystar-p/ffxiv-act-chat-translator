@@ -1,7 +1,35 @@
 package main
 
-// example log line:
-// 00|2022-10-22T20:13:42.0000000+09:00|003D|ナブシェーラ|今でもときどき、あの化け物に襲われる夢を見てしまうの。 恐ろしい記憶ほど、なかなか忘れられないものだけど、 その分、この平穏な毎日に感謝しているわ。|c83d39a60fdda387
+/*
+example log line:
+  00|2022-10-22T20:13:42.0000000+09:00|003D|ナブシェーラ|今でもときどき、あの化け物に襲われる夢を見てしまうの。|c83d39a60fdda387
+*/
+
+/*
+some chat codes:
+  SAY                   = "000A"
+  SHOUT                 = "000B"
+  PARTY                 = "000E"
+  ALLIANCE              = "000F"
+  LINKSHELL1            = "0010"
+  LINKSHELL2            = "0011"
+  LINKSHELL3            = "0012"
+  LINKSHELL4            = "0013"
+  LINKSHELL5            = "0014"
+  LINKSHELL6            = "0015"
+  LINKSHELL7            = "0016"
+  LINKSHELL8            = "0017"
+  FREE_COMPANY          = "0018"
+  CUSTOM_EMOTE          = "001C"
+  EMOTE                 = "001D"
+  YELL                  = "001E"
+  WHISPER               = "000C"
+  CROSSWORLD_LINKSHELL1 = "0025"
+  CROSSWORLD_LINKSHELL2 = "0065"
+  CROSSWORLD_LINKSHELL3 = "0066"
+  CROSSWORLD_LINKSHELL4 = "0067"
+  CROSSWORLD_LINKSHELL5 = "0068"
+*/
 
 import (
 	"encoding/json"

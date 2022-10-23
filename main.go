@@ -167,7 +167,11 @@ func main() {
 		if err != nil {
 			logrus.WithError(err).Error("translate error")
 		}
-		fmt.Printf("%s: %s\n\n", actor, translated)
+		if actor == "" {
+			fmt.Printf("%s\n\n", translated)
+		} else {
+			fmt.Printf("%s: %s\n\n", actor, translated)
+		}
 	}
 }
 

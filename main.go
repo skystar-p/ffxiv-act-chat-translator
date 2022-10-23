@@ -223,6 +223,9 @@ var (
 )
 
 func translate(secrets []Secret, secretIdx *int, content string) (string, error) {
+	if content == "" {
+		return "", nil
+	}
 	// check translation cache
 	if translated, ok := translateCache[content]; ok {
 		logrus.Debugf("using translation cache: %s", content)
